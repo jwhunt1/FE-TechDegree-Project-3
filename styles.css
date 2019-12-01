@@ -10,9 +10,12 @@ font-family: 'Jomolhari', serif;
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, fieldset legend {
+h1, h2, h3, h4, h5, h6, p, fieldset legend,
+ .submit_button input {
     font-family: 'Jomolhari', serif;
 }
+
+/* ------ Header Start ------ */
 
 .page-header {
     background: #2D3945;
@@ -48,7 +51,11 @@ h1, h2, h3, h4, h5, h6, p, fieldset legend {
     margin: auto auto 30px auto;
 }
 
-fieldset {
+/* ------ Header End ------ */
+
+/* ------ Contact Start ------ */
+
+fieldset.contact {
     border: 0;
     padding: 0;
     margin: auto;
@@ -61,15 +68,15 @@ hr.first-divider, hr.second-divider {
     color: #424242;
     background-color: #424242;
     width: 90%;
-    margin: 3px auto;
-    }
+    margin: 3px auto 0 auto;
+}
 
 hr.first-divider {
     height: 4px;
 }
 
-hr.second-divider {
-    margin-bottom: 25px;
+fieldset.contact legend {
+    padding-top: 25px;
 }
 
 fieldset legend{
@@ -79,7 +86,7 @@ fieldset legend{
     margin-bottom: 5px;
 }
 
-label, input {
+.contact label, .contact input {
     display: block;
 }
 
@@ -96,7 +103,7 @@ label {
     margin: auto;
 }
 
-fieldset.contact input, select {
+fieldset.contact input, select, .other_topics textarea {
     margin: auto;
     width: 100%;
     height: 45px;
@@ -119,7 +126,91 @@ fieldset.contact input::placeholder, select{
     margin-bottom: 25px;
 }
 
-fieldset.contact input:focus {
+fieldset.contact input:focus, textarea:focus,
+select:focus {
+    transition: all ease-in 0.3s;
     outline: none;
     border: 2px solid #46698B;
+}
+
+/* ------ Contact End ------ */
+
+
+/* ------ Newsletter Start ------ */
+
+hr {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 5px;
+    background: rgb(58, 73, 88);
+}
+
+fieldset.newsletter {
+    border: 0;
+    padding: 0;
+    margin: auto;
+    background: rgb(88, 110, 133);
+}
+
+.newsletter_wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.newsletter legend {
+    color: white;
+}
+
+.newsletter label{
+    color: rgb(238, 238, 238);
+}
+
+.newsletter_news, .newsletter_format {
+    margin: 15px auto;
+}
+
+.newsletter_news input, .newsletter_format input {
+    margin-right: 10px;
+}
+
+.newsletter_format_select {
+    margin-top: 30px;
+}
+
+.other_topics {
+    margin-top: 30px;
+}
+
+.other_topics textarea {
+    margin-top: 20px;
+    height: 100px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit_button {
+    margin-top: 30px;
+}
+
+.submit_button input {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #4EBBB5;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+footer {
+    margin: auto;
+    font-size: 0.8em;
+    color: #A8ADB2;
+    text-align: center;
 }
