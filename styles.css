@@ -156,15 +156,19 @@ fieldset.newsletter {
 .newsletter_wrapper {
     width: 90%;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
 .newsletter legend {
     color: white;
+    float: left;
+    margin-left: 5%;
+    margin-top: 15px;
+
 }
 
-.newsletter label{
+.newsletter label, p{
     color: rgb(238, 238, 238);
 }
 
