@@ -5,9 +5,12 @@ font-family: 'Jomolhari', serif;
 
 * {
     font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, fieldset legend {
     font-family: 'Jomolhari', serif;
 }
 
@@ -35,23 +38,88 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 900;
     font-size: 1.2em;
     color: #2D3945;
+    margin: 25px auto 10px auto;
 }
 
 .main-header p {
     color: #A4A9AE;
     font-size: 0.89em;
     width: 80%;
-    margin: auto auto 25px auto;
+    margin: auto auto 30px auto;
 }
 
 fieldset {
     border: 0;
+    padding: 0;
+    margin: auto;
+    width: 90%;
 }
 
-hr.first-divider {
-    height: 1px;
+hr.first-divider, hr.second-divider {
+    height: 2px;
     border: 0;
     color: #424242;
     background-color: #424242;
     width: 90%;
+    margin: 3px auto;
     }
+
+hr.first-divider {
+    height: 4px;
+}
+
+hr.second-divider {
+    margin-bottom: 25px;
+}
+
+fieldset legend{
+    font-weight: 900;
+    color: #2D3945;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    color: #7A8896;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.form-block {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+fieldset.contact input, select {
+    margin: auto;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    background: #EFF0F1;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+fieldset.contact input::placeholder, select{
+    color: #A8ADB2;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 0.7em;
+}
+
+#zipcode {
+    width: 50%;
+    float: left;
+    margin-bottom: 25px;
+}
+
+fieldset.contact input:focus {
+    outline: none;
+    border: 2px solid #46698B;
+}
