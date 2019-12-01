@@ -115,30 +115,43 @@
                     <input type="number" id="zipcode" name="user_zip" placeholder="Optional">
                 </div>
             </fieldset>
-            <hr class="second-divider">
+            <hr>
             <fieldset class="newsletter">
-                <legend>Newsletter</legend>
-                <div class="newsletter_selection">
-                    <label for="">Select the newsletters you would like to receive</label>
-                    <input type="checkbox" id="html_news" name="news_type" value="html" checked>
-                    <label for="html_news">HTML News</label>
-                    <input type="checkbox" id="css_news" name="news_type" value="css">
-                    <label for="css_news">CSS News</label>
-                    <input type="checkbox" id="javascript_news" name="news_type" value="javascript">
-                    <label for="javascript_news">JavaScript News</label>
-                </div>
-                <div>
-                    <input type="radio" id="radio_html" name="news_format" value="html" checked>
-                    <label for="radio_html">HTML</label>
-                    <input type="radio" id="radio_text" name="news_format" value="plain">
-                    <label for="radio_text">Plain Text</label>
-                </div>
-                <div>
-                    <label for="text_topics">Other topics you'd like to hear about</label>
-                    <textarea id="text_topics" name="topics"></textarea>
-                </div>
-                <div>
-                    <input type="submit">
+                <div class="newsletter_wrapper">
+                    <legend>Newsletter</legend>
+                    <div class="newsletter_selection">
+                        <label for="newsletter_selection">Select the newsletters you would like to receive</label>
+                        <div class="newsletter_news">
+                            <input type="checkbox" id="html_news" name="news_type" value="html" checked>
+                            <label for="html_news">HTML News</label>
+                        </div>
+                        <div class="newsletter_news">
+                            <input type="checkbox" id="css_news" name="news_type" value="css">
+                            <label for="css_news">CSS News</label>
+                        </div>
+                        <div class="newsletter_news">
+                            <input type="checkbox" id="javascript_news" name="news_type" value="javascript">
+                            <label for="javascript_news">JavaScript News</label>
+                        </div>
+                    </div>
+                    <div class="newsletter_format_select">
+                        <label for="newsletter_format_select">Newsletter Format</label>
+                        <div class="newsletter_format">
+                        <input type="radio" id="radio_html" name="news_format" value="html" checked>
+                        <label for="radio_html">HTML</label>
+                        </div>
+                        <div class="newsletter_format">
+                        <input type="radio" id="radio_text" name="news_format" value="plain">
+                        <label for="radio_text">Plain Text</label>
+                        </div>
+                    </div>
+                    <div class="other_topics">
+                        <label for="text_topics">Other topics you'd like to hear about</label>
+                        <textarea id="text_topics" name="topics"></textarea>
+                    </div>
+                    <div class="submit_button">
+                        <input type="submit" value="Sign Up">
+                    </div>
                 </div>
             </fieldset>
         </form>
