@@ -214,3 +214,29 @@ footer {
     color: #A8ADB2;
     text-align: center;
 }
+
+
+@media screen and (min-width: 768px) {
+    fieldset.contact, hr.first-divider,
+    hr.second-divider, .newsletter_wrapper {
+        width: 60%;
+    }
+    
+    .form-block {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    fieldset.contact label {
+        width: 40%;
+    }
+
+    fieldset.contact input, select {
+        width: 60%;
+    }
+
+    #zipcode {
+        margin-left: 0;
+        width: 30%;
+    }
+}
