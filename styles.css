@@ -127,11 +127,12 @@ fieldset.contact input::placeholder, select{
 }
 
 fieldset.contact input:focus, textarea:focus,
-select:focus {
-    transition: all ease-in 0.3s;
+select:focus, .zipcode {
+    transition: all ease-in 0.5s;
+    background: rgb(205, 209, 212);
     outline: none;
-    border: 2px solid #46698B;
 }
+
 
 /* ------ Contact End ------ */
 
@@ -215,8 +216,11 @@ textarea {
 footer {
     margin: auto;
     font-size: 0.8em;
-    color: #A8ADB2;
     text-align: center;
+}
+
+footer p {
+    color: rgb(88, 110, 133);
 }
 
 
@@ -242,5 +246,9 @@ footer {
     #zipcode {
         margin-left: 0;
         width: 30%;
+    }
+
+    .newsletter legend {
+        margin-left: 20%;
     }
 }
